@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined form</title>
+</head>
+<body  >
+    <h3 style="-webkit-text-fill-color: rgb(16, 16, 16);text-align:center;"><u>STUDENT REGISTRATION FORM</u></h3>
+   <div  style="width: 70%;margin:0 auto;padding: 1.5rem;">
+    <form>
+        <fieldset style="background-color: rgb(0, 0, 0);-webkit-text-fill-color: antiquewhite;" >
+            
+            <p><label for="Name" >FirstName  :    </label>
+            <input type="text" ><small>(max 30 character A-Z And a-z)</small> </p>
+
+            <p>
+
+                <label for="Name" >LastName :      </label>
+                <input type="text" ><small>(max 30 character A-Z And a-z)</small>
+            </p>
+            
+            <p>
+                <label> Date-of-Birth :</label>
+                <select name="DAy"style="-webkit-text-fill-color: black;" >
+                    <option >Day</option>
+                    <option >1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >5</option>
+                    <option >6</option>
+                    <option >7</option>
+                    <option >8</option>
+                    <option >9</option>
+                    <option >10</option>
+                    <option >11</option>
+                    <option >12</option>
+                </select>
+                <select name="month" style="-webkit-text-fill-color: black;">
+                    <option value="month">month</option>
+                    <option value="january">Jan</option>
+                    <option value="feb">feb</option>
+                    <option value="mar">mar</option>
+                    <option value="apr">apri</option>
+                    <option value="may">may</option>
+                    <option value="jun">jun</option>
+                    <option value="july">july</option>
+                    <option value="aug">aug</option>
+                    <option value="spt">spt</option>
+                    <option value="oct">oct</option>
+                    <option value="nov">nov</option>
+                    <option value="dec">dec</option>
+                </select>
+              
+                <select name="year"style="-webkit-text-fill-color: black;" >
+                    <option >year</option>
+                    <option >2001</option>
+                    <option >2002</option>
+                    <option >2003</option>
+                    <option >2004</option>
+                    <option >2005</option>
+                    <option >2006</option>
+                    <option >2007</option>
+                    <option >2008</option>
+                    <option >2009</option>
+                    <option >2010</option>
+                    <option >2011</option>
+                    <option >2023</option>
+                </select>
+            </p>
+        <p>
+            <label for="Email">Email-ID:</label>
+            <input type="email"style="-webkit-text-fill-color: black;" >
+        </p>
+        <p>
+
+           
+            <label for="phone">phone number:</label>
+     <input type="tel" id="phone" name="phone"
+      
+          pattern="[0-9]{10}" style="-webkit-text-fill-color: black;"><small>(up to 10 character)</small>
+
+        </p>
+        <p>
+            <label for="Gender">Gender :   </label>
+            <label for="male">male</label>
+            <input type="radio" name="Gender" id="Gender">
+            <label for="Female">Female</label>
+            <input type="radio" name="Gender" id="Gender">    
+        </p>
+        <p>
+            <label for="Address">Address:</label>
+            <textarea name="message" rows="2" cols="10" style="-webkit-text-fill-color: black;" ></textarea>
+
+        </p>
+        <p>
+
+            <label for="city">City:</label>
+            <input type="text" style="-webkit-text-fill-color: black;" >
+            
+        </p>
+        <p>
+            <label for="pin code">pin code:</label>
+            <input type="number" style="-webkit-text-fill-color: black;">
+        </p>
+        <p>
+            <label for="State">State:</label>
+            <input type="text" style="-webkit-text-fill-color: black;">
+
+            
+        </p>
+        <p>
+
+            <label for="country">Country:</label>
+            <input type="text" style="-webkit-text-fill-color: black;">
+        </p>
+        <p>
+            <label for="Hobbies">Hobbies:</label>
+            <label for="Drawing">Drawing</label>
+            <input type="checkbox">
+            <label for="Dancing">Dancing</label>
+            <input type="checkbox">
+            <label for="Singing">Singing</label>
+            <input type="checkbox">
+            <label for="sketching">sketching</label>
+            <input type="checkbox"><br>
+            <label for="others">others</label>
+            <input type="checkbox"> <input type="text" style="-webkit-text-fill-color: black;">
+        </p>
+
+        <p>
+           <label for="Qualification" style="width: 150px;float: left;"><Strong>Qualification</Strong></label>
+           <table style="display: inline-block;border-spacing: 0.8rem 0">
+            <tr>
+                <th>SI.NO.Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of passing</th>
+            </tr>
+            <tr>
+                <td><strong>1</strong>Class X</td>
+                <td><input type="text"/></td>
+                <td><input type="text"/></td>
+                <td><input type="text"/></td>
+                
+                
+            </tr><tr>
+                <td><strong>2</strong>Class XII</td>
+                <td><input type="text"/></td>
+                <td><input type="text"/></td>
+                <td><input type="text"/></td>
+                
+                
+            </tr>
+            <tr>
+                <td><strong>3</strong>Graduation</td>
+                <td><input type="text"/></td>
+                <td><input type="text"/></td>
+                <td><input type="text"/></td>
+                
+                
+            </tr>
+            <tr>
+                <td><strong>4</strong>masters</td>
+                <td><input type="text"/></td>
+                <td><input type="text"/></td>
+                <td><input type="text"/></td>
+                
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td>(10char max)</td>
+                <td>
+                    (up to 2 decimal)
+                </td>
+            </tr>
+
+           </table>
+
+        </p>
+        <p>
+            <label for="course">Courses <br>applied for</label>
+            <label for="Bca">Bca</label>
+            <input type="radio">
+            <label for="B.com">B.com</label>
+            <input type="radio">
+            <label for="B.sc">B.sc</label>
+            <input type="radio">
+            <label for="B.A">B.A</label>
+            <input type="radio">
+        </p>
+        <p style="text-align: center;">
+
+            <input type="submit" style="-webkit-text-fill-color: black;">
+            <input type="reset" style="-webkit-text-fill-color: black;">
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </fieldset>
+
+    </form>
+</div>
+</body>
+</html>
