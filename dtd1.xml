@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE TVSCHEDULE [
+<!ELEMENT TVSCHEDULE (CHANNEL+)>
+<!ELEMENT CHANNEL (banner, day+)>
+<!ELEMENT banner (#PCDATA)>
+<!ELEMENT day (date, (holiday|programslot)+)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT holiday (#PCDATA)>
+<!ELEMENT programslot (time, title, description?)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST TVSCHEDULE name CDATA #IMPLIED>
+<!ATTLIST CHANNEL channel CDATA #REQUIRED>
+<!ATTLIST programslot att CDATA #IMPLIED>
+<!ATTLIST title
+          rating CDATA #IMPLIED
+          language CDATA #IMPLIED>
+]>
+
+<TVSCHEDULE name="Name">
+    <CHANNEL channel="chan">
+        <banner>Sample Banner Text</banner>
+        <day>
+            <date>2023-09-10</date>
+            <holiday>Sample Holiday</holiday>
+            <programslot att="Vtr">
+                <time>08:00 AM</time>
+                <title rating="PG" language="English">Program Title</title>
+                <description>Program Description</description>
+            </programslot>
+        </day>
+
+        <day>
+            <date>2022-12-12</date>
+            <holiday>holla</holiday>
+            <programslot att="viper">
+                <time>9:00</time>
+                <title rating="NG" language="Nepali">BEST TITLE </title>
+                <description>NG gamming</description>
+                </programslot>
+        </day>
+    </CHANNEL>
+
+     <CHANNEL channel="Man">
+        <banner>Original Banner Text</banner>
+        <day>
+            <date>2023-08-10</date>
+            <holiday>orginal Holiday</holiday>
+            <programslot att="BAC">
+                <time>08:09 PM</time>
+                <title rating="PNG" language="Social">Origina; Title</title>
+                <description>Program Description</description>
+            </programslot>
+        </day>
+
+        <day>
+            <date>2022-12-12</date>
+            <holiday>holla</holiday>
+            <programslot att="viper">
+                <time>9:00</time>
+                <title rating="NG" language="Nepali">BEST TITLE </title>
+                <description>G gamming</description>
+                </programslot>
+        </day>
+    </CHANNEL>
+
+
+</TVSCHEDULE>

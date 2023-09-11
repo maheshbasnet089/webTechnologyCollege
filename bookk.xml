@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE BOOK  [
+<!ELEMENT BOOK (book+)>
+<!ELEMENT book (title?, isbn+, (zipcode|Author), Publish*)>
+<!ELEMENT title (banner, day+)>
+<!ELEMENT banner (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT zipcode (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Publish (#PCDATA)>
+<!ATTLIST title name CDATA #REQUIRED>
+<!ATTLIST isbn isbn CDATA #REQUIRED>
+<!ATTLIST zipcode Zname CDATA #REQUIRED>
+<!ATTLIST Publish year CDATA #REQUIRED>
+]>
+
+<BOOK>
+    <book>
+        <title name="ramos">AESB</title>
+        <isbn isbn="34">34332</isbn>
+        <zipcode Zname="23432423432">45325</zipcode>
+        <Publish year="1995">ITAHARI</Publish>
+    </book>
+</BOOK><?xml version="1.0"?>
+<!DOCTYPE BOOK  [
+<!ELEMENT BOOK (book+)>
+<!ELEMENT book (title?, isbn+, (zipcode|Author), Publish*)>
+<!ELEMENT title (banner, day+)>
+<!ELEMENT banner (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT zipcode (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Publish (#PCDATA)>
+<!ATTLIST title name CDATA #REQUIRED>
+<!ATTLIST isbn isbn CDATA #REQUIRED>
+<!ATTLIST zipcode Zname CDATA #REQUIRED>
+<!ATTLIST Publish year CDATA #REQUIRED>
+]>
+
+<BOOK>
+    <book>
+        <title name="ramos">AESB</title>
+        <isbn isbn="34">34332</isbn>
+        <zipcode Zname="23432423432">45325</zipcode>
+        <Publish year="1995">ITAHARI</Publish>
+    </book>
+</BOOK>  
+
